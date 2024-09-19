@@ -1,0 +1,19 @@
+@mixin white_bold() {
+    color: $white;
+    font-weight: 900;
+    font-size: 40px;
+    margin-left: 200px;
+}
+
+@mixin fix-pos() {
+    position: relative;
+    top: -300px;
+}
+
+@mixin icon() {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: $light;
+    width: 80px;
+    padding: 4px
+}

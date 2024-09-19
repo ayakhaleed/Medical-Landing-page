@@ -1,0 +1,227 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+.white-bold-head {
+    @include white_bold();
+    @include fix-pos();
+    top: -550px;
+}
+
+.white-bold {
+    @include white_bold();
+    @include fix-pos();
+    top: -550px;
+    font-size: 20px;
+}
+
+.white-bold-line {
+    @include white_bold();
+    @include fix-pos();
+    top: -550px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.info {
+    background-color: $light-gray;
+    padding-right: 90px;
+    width: $width-100;
+}
+
+.nav-main {
+    width: $width-100;
+    margin: 0;
+    height: 120px;
+}
+
+.main-img {
+    @include fix-pos();
+    top: -290px;
+    z-index: -9999;
+    height: 600px;
+    width: $width-100;
+}
+
+.fixed-nav {
+    @include fix-pos();
+    top: 200px;
+    width: 130px;
+    float: right;
+    z-index: 9999;
+}
+
+.s {
+    @include icon();
+    justify-content: center !important;
+    align-items: center;
+
+}
+
+.gray {
+    color: $lightg !important;
+
+    &:hover {
+        color: $primary !important;
+    }
+}
+
+.none {
+    text-decoration: none;
+    color: $black;
+    text-align: center;
+}
+
+.nav-link {
+    &:hover {
+        color: $white;
+    }
+}
+
+.hover-gray {
+    &:hover {
+        color: $lightg !important;
+    }
+}
+
+.img-shadow {
+    box-shadow: 6px 6px 27px $black;
+    width: 360px;
+    padding: 0px;
+}
+
+.textg {
+    color: $lightDGray;
+    width: $width-80;
+}
+
+.nav-second {
+    width: 83%;
+    margin: auto;
+    @include fix-pos();
+    top: -480px;
+
+    a {
+        color: $white !important;
+        text-decoration: none;
+    }
+
+    color: $white !important;
+
+}
+
+.section {
+    @include fix-pos();
+    top: -430px;
+    width: $width-100;
+}
+
+.section2 {
+    background-color: $light-gray2;
+    @include fix-pos();
+    z-index: -1;
+
+}
+
+.sec2 {
+    width: 33%;
+}
+
+.subsection2 {
+    width: $width-80;
+}
+
+.section3 {
+    @include fix-pos();
+    top: -200px;
+    width: $width-80;
+}
+
+.des {
+    width: $width-100;
+}
+
+.btn-primary-custom:hover {
+    background-color: $primary2;
+    border-color: $black;
+}
+
+.subsection4 {
+    width: $width-80;
+}
+
+.section4 {
+    background-color: $light-gray3;
+    @include fix-pos();
+    top: -100px;
+    z-index: -1;
+}
+
+.section5 {
+    width: $width-80;
+
+    .card-group {
+        height: 200px;
+    }
+}
+
+.section6 {
+    width: $width-100;
+    background-color: $dark-blue;
+    color: $white;
+
+    .content {
+        width: $width-50;
+        text-align: center;
+    }
+}
+
+.section7 {
+    width: $width-100;
+    background-color: $dark-gray;
+    color: $white;
+}
+
+.filtered-image {
+    filter: invert(100%);
+}
+
+.qoute {
+    font-size: 30px;
+}
+
+.gray-dark {
+    color: $lightDGray;
+}
+
+.btn-primary {
+    border-radius: 0px !important;
+}
+
+.btn {
+    border-radius: 0px !important;
+}
+
+.active {
+    border-radius: 0px !important;
+}
+
+.dropdown {
+    background-color: $primary2;
+    display: none;
+
+    a {
+        .ditem {
+            color: $white !important;
+            &:hover{
+                text-decoration: none !important;
+                color: $black !important;
+            }
+        }
+        &:hover{
+            text-decoration: none !important;
+        }
+    }
+
+}
